@@ -50,10 +50,6 @@ public class PersonController {
     public List<Person> findAllbyAscorder(@RequestBody Person person){
         return serviceMethods.findAllByOrderByAgeAsc();
     }
-    @DeleteMapping("Person/DeleteByID/{uid}")
 
-    public Person deleteById(@PathVariable int uid){
-        return serviceMethods.delete(uid);
-    }
 
 }
